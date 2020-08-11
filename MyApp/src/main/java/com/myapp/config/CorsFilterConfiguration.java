@@ -9,22 +9,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * <h1>CorsFilterConfiguration</h1>
- * <p>
- * This class is responsible for Cross-origin resource sharing
- * </p>
- *
- * @author Shanawaz
- * @author Ravindra Pawar
- */
+
 @Component
 @Order(Ordered.HIGHEST_PRECEDENCE)
 public class CorsFilterConfiguration implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        //Nothing to intialize
+        
     }
 
     @Override
@@ -45,6 +37,6 @@ public class CorsFilterConfiguration implements Filter {
 
     @Override
     public void destroy() {
-        //Nothing to clean up
+     
     }
 }
